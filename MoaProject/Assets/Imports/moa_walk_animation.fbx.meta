@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: 5876bd8fc13adc649a47b4fb164da0e7
+timeCreated: 1490497338
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Moa_model_Rigged_UV_SkinWeight_Finished:Head
+    100002: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2
+    100004: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2 1
+    100006: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_1
+    100008: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_2
+    100010: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+    100012: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1
+    100014: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2
+    100016: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3
+    100018: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4
+    100020: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5
+    100022: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6
+    100024: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7
+    100026: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8
+    100028: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9
+    100030: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+    100032: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle 1
+    100034: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot
+    100036: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1
+    100038: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee
+    100040: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1
+    100042: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg
+    100044: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1
+    100046: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+    100048: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh 1
+    100050: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1
+    100052: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1 1
+    100054: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2
+    100056: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2 1
+    100058: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1
+    100060: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1 1
+    100062: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2
+    100064: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2 1
+    100066: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1
+    100068: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1 1
+    100070: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2
+    100072: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2 1
+    100074: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1
+    100076: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1 1
+    100078: Moa_model_Rigged_UV_SkinWeight_Finished:Root
+    100080: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_1
+    100082: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_2
+    100084: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_3
+    100086: //RootNode
+    400000: Moa_model_Rigged_UV_SkinWeight_Finished:Head
+    400002: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2
+    400004: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2 1
+    400006: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_1
+    400008: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_2
+    400010: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+    400012: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1
+    400014: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2
+    400016: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3
+    400018: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4
+    400020: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5
+    400022: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6
+    400024: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7
+    400026: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8
+    400028: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9
+    400030: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+    400032: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle 1
+    400034: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot
+    400036: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1
+    400038: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee
+    400040: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1
+    400042: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg
+    400044: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1
+    400046: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+    400048: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh 1
+    400050: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1
+    400052: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1 1
+    400054: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2
+    400056: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2 1
+    400058: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1
+    400060: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1 1
+    400062: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2
+    400064: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2 1
+    400066: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1
+    400068: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1 1
+    400070: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2
+    400072: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2 1
+    400074: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1
+    400076: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1 1
+    400078: Moa_model_Rigged_UV_SkinWeight_Finished:Root
+    400080: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_1
+    400082: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_2
+    400084: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_3
+    400086: //RootNode
+    4300000: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1/Moa_model_Rigged_UV_SkinWeight_Finished:Head
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1/Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2/Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1/Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_1/Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_2
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot/Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1/Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1
+          1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2 1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1
+          1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2 1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1
+          1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2 1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1
+          1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1/Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1
+          1/Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2 1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_1
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_1/Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_2
+        weight: 1
+      - path: Moa_model_Rigged_UV_SkinWeight_Finished:Root/Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_1/Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_2/Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Moa_model_Rigged_UV_SkinWeight_Finished:Root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

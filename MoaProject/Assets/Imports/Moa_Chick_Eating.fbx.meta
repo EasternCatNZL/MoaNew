@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 0a76ff266f6baa542ac76330f6a5eb99
+timeCreated: 1490513000
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Moa_model_Rigged_UV_SkinWeight_Finished:Head
+    100004: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2
+    100006: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2 1
+    100008: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_1
+    100010: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_2
+    100012: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+    100014: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1
+    100016: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2
+    100018: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3
+    100020: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4
+    100022: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5
+    100024: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6
+    100026: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7
+    100028: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8
+    100030: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9
+    100032: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+    100034: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle 1
+    100036: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot
+    100038: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1
+    100040: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee
+    100042: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1
+    100044: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg
+    100046: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1
+    100048: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+    100050: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh 1
+    100052: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1
+    100054: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1 1
+    100056: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2
+    100058: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2 1
+    100060: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1
+    100062: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1 1
+    100064: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2
+    100066: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2 1
+    100068: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1
+    100070: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1 1
+    100072: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2
+    100074: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2 1
+    100076: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1
+    100078: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1 1
+    100080: Moa_model_Rigged_UV_SkinWeight_Finished:Root
+    100082: Moa_model_Rigged_UV_SkinWeight_Finished:Skeleton_Group
+    100084: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_1
+    100086: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_2
+    100088: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_3
+    400000: //RootNode
+    400002: Moa_model_Rigged_UV_SkinWeight_Finished:Head
+    400004: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2
+    400006: Moa_model_Rigged_UV_SkinWeight_Finished:Left_Toe_Right_2 1
+    400008: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_1
+    400010: Moa_model_Rigged_UV_SkinWeight_Finished:Lower_Beak_2
+    400012: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+    400014: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_1
+    400016: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_2
+    400018: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_3
+    400020: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_4
+    400022: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_5
+    400024: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_6
+    400026: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_7
+    400028: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_8
+    400030: Moa_model_Rigged_UV_SkinWeight_Finished:Neck_9
+    400032: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle
+    400034: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Ankle 1
+    400036: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot
+    400038: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Foot 1
+    400040: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee
+    400042: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Knee 1
+    400044: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg
+    400046: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Leg1
+    400048: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh
+    400050: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Thigh 1
+    400052: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1
+    400054: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_1 1
+    400056: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2
+    400058: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Back_2 1
+    400060: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1
+    400062: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_1 1
+    400064: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2
+    400066: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Leftt_2 1
+    400068: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1
+    400070: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_1 1
+    400072: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2
+    400074: Moa_model_Rigged_UV_SkinWeight_Finished:Right_Toe_Mid_2 1
+    400076: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1
+    400078: Moa_model_Rigged_UV_SkinWeight_Finished:Rightt_Toe_Rightt_1 1
+    400080: Moa_model_Rigged_UV_SkinWeight_Finished:Root
+    400082: Moa_model_Rigged_UV_SkinWeight_Finished:Skeleton_Group
+    400084: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_1
+    400086: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_2
+    400088: Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_3
+    4300000: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

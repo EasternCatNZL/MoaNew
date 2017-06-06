@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: b4265042716abc246b8a78109be68a2b
+timeCreated: 1490422243
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Back_Bottom_Cluster
+    100002: Back_Control
+    100004: Body_Control
+    100006: Head
+    100008: Head_Control
+    100010: IK_Back_Neck_Curve
+    100012: ikHandle1
+    100014: Left_Ankle
+    100016: Left_Ankle_Pivot
+    100018: Left_Back_Toe_IK
+    100020: Left_Ball_IK
+    100022: Left_Foot_Control1
+    100024: Left_HeelPeel_pivot1
+    100026: Left_Left_Toe_IK1
+    100028: Left_Leg_IK
+    100030: Left_Mid_Toe_IK
+    100032: Left_Right_Toe_IK
+    100034: Left_Swivel_pivot
+    100036: Left_Toe_Right_2
+    100038: Left_Toe_Right_2 1
+    100040: Left_Toe_Tip_Pivot
+    100042: Left_ToeTap_pivot
+    100044: Lower_Beak_1
+    100046: Lower_Beak_2
+    100048: //RootNode
+    100050: Moa_Polymodel
+    100052: Neck_1
+    100054: Neck_2
+    100056: Neck_3
+    100058: Neck_4
+    100060: Neck_5
+    100062: Neck_6
+    100064: Neck_7
+    100066: Neck_8
+    100068: Neck_9
+    100070: Neck_IK
+    100072: Rig_Group
+    100074: Right_Ankle
+    100076: Right_Ankle 1
+    100078: Right_Ankle 2
+    100080: Right_Ankle_Pivot
+    100082: Right_Ball_IK
+    100084: Right_Foot
+    100086: Right_Foot 1
+    100088: Right_Foot_Control
+    100090: Right_HeelPeel_pivot1
+    100092: Right_Knee
+    100094: Right_Knee 1
+    100096: Right_Knee_Control
+    100098: Right_Knee_Control 1
+    100100: Right_Left_Toe_IK1
+    100102: Right_Leg
+    100104: Right_Leg1
+    100106: Right_Leg_IK
+    100108: Right_Mid_Toe_IK
+    100110: Right_Right_Toe_IK
+    100112: Right_Swivel_pivot
+    100114: Right_Thigh
+    100116: Right_Thigh 1
+    100118: Right_Toe_Back_1
+    100120: Right_Toe_Back_1 1
+    100122: Right_Toe_Back_2
+    100124: Right_Toe_Back_2 1
+    100126: Right_Toe_Leftt_1
+    100128: Right_Toe_Leftt_1 1
+    100130: Right_Toe_Leftt_2
+    100132: Right_Toe_Leftt_2 1
+    100134: Right_Toe_Mid_1
+    100136: Right_Toe_Mid_1 1
+    100138: Right_Toe_Mid_2
+    100140: Right_Toe_Mid_2 1
+    100142: Right_Toe_Tip_Pivot
+    100144: Right_ToeTap_pivot
+    100146: Rightt_Back_Toe_IK
+    100148: Rightt_Toe_Rightt_1
+    100150: Rightt_Toe_Rightt_1 1
+    100152: Root
+    100154: Skeleton_Group
+    100156: Super_Mover_Control
+    100158: Tail_Curve
+    100160: Tail_End_Cluster
+    100162: Tail_End_Control
+    100164: Tail_IK
+    100166: Tail_Joint_1
+    100168: Tail_Joint_2
+    100170: Tail_Joint_3
+    100172: Upper_Neck_Cluster
+    100174: Upper_Neck_Control
+    100176: Upper_Tail_Cluster
+    100178: Upper_Tail_Control
+    400000: Back_Bottom_Cluster
+    400002: Back_Control
+    400004: Body_Control
+    400006: Head
+    400008: Head_Control
+    400010: IK_Back_Neck_Curve
+    400012: ikHandle1
+    400014: Left_Ankle
+    400016: Left_Ankle_Pivot
+    400018: Left_Back_Toe_IK
+    400020: Left_Ball_IK
+    400022: Left_Foot_Control1
+    400024: Left_HeelPeel_pivot1
+    400026: Left_Left_Toe_IK1
+    400028: Left_Leg_IK
+    400030: Left_Mid_Toe_IK
+    400032: Left_Right_Toe_IK
+    400034: Left_Swivel_pivot
+    400036: Left_Toe_Right_2
+    400038: Left_Toe_Right_2 1
+    400040: Left_Toe_Tip_Pivot
+    400042: Left_ToeTap_pivot
+    400044: Lower_Beak_1
+    400046: Lower_Beak_2
+    400048: //RootNode
+    400050: Moa_Polymodel
+    400052: Neck_1
+    400054: Neck_2
+    400056: Neck_3
+    400058: Neck_4
+    400060: Neck_5
+    400062: Neck_6
+    400064: Neck_7
+    400066: Neck_8
+    400068: Neck_9
+    400070: Neck_IK
+    400072: Rig_Group
+    400074: Right_Ankle
+    400076: Right_Ankle 1
+    400078: Right_Ankle 2
+    400080: Right_Ankle_Pivot
+    400082: Right_Ball_IK
+    400084: Right_Foot
+    400086: Right_Foot 1
+    400088: Right_Foot_Control
+    400090: Right_HeelPeel_pivot1
+    400092: Right_Knee
+    400094: Right_Knee 1
+    400096: Right_Knee_Control
+    400098: Right_Knee_Control 1
+    400100: Right_Left_Toe_IK1
+    400102: Right_Leg
+    400104: Right_Leg1
+    400106: Right_Leg_IK
+    400108: Right_Mid_Toe_IK
+    400110: Right_Right_Toe_IK
+    400112: Right_Swivel_pivot
+    400114: Right_Thigh
+    400116: Right_Thigh 1
+    400118: Right_Toe_Back_1
+    400120: Right_Toe_Back_1 1
+    400122: Right_Toe_Back_2
+    400124: Right_Toe_Back_2 1
+    400126: Right_Toe_Leftt_1
+    400128: Right_Toe_Leftt_1 1
+    400130: Right_Toe_Leftt_2
+    400132: Right_Toe_Leftt_2 1
+    400134: Right_Toe_Mid_1
+    400136: Right_Toe_Mid_1 1
+    400138: Right_Toe_Mid_2
+    400140: Right_Toe_Mid_2 1
+    400142: Right_Toe_Tip_Pivot
+    400144: Right_ToeTap_pivot
+    400146: Rightt_Back_Toe_IK
+    400148: Rightt_Toe_Rightt_1
+    400150: Rightt_Toe_Rightt_1 1
+    400152: Root
+    400154: Skeleton_Group
+    400156: Super_Mover_Control
+    400158: Tail_Curve
+    400160: Tail_End_Cluster
+    400162: Tail_End_Control
+    400164: Tail_IK
+    400166: Tail_Joint_1
+    400168: Tail_Joint_2
+    400170: Tail_Joint_3
+    400172: Upper_Neck_Cluster
+    400174: Upper_Neck_Control
+    400176: Upper_Tail_Cluster
+    400178: Upper_Tail_Control
+    4300000: Moa_Polymodel
+    9500000: //RootNode
+    13700000: Moa_Polymodel
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
