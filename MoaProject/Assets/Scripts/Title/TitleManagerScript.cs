@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class TitleManagerScript : MonoBehaviour {
 
+    //Image refs
+    [Header("Images")]
     public Image startArrow; //reference to start arrow
     public Image creditArrow; //reference to credit arrow
     public Image quitArrow; //reference to end arrow
-    public Image Credits;                    
+    public Image Credits; //ref to credits page
 
     private bool inCredits = false; 
 

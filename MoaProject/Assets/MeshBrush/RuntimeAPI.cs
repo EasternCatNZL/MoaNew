@@ -141,7 +141,7 @@ namespace MeshBrush
         #region Painting
         public void Paint_SingleMesh(RaycastHit paintHit)
         {
-            if (paintHit.collider.transform.FindChild("Holder") == null) // Set up a holder object in case we don't have one yet.
+            if (paintHit.collider.transform.Find("Holder") == null) // Set up a holder object in case we don't have one yet.
             {
                 holder = new GameObject("Holder");
                 holderTransform = holder.transform;
@@ -188,7 +188,7 @@ namespace MeshBrush
                 brushTransform.parent = paintHit.collider.transform;
             }
 
-            if (paintHit.collider.transform.FindChild("Holder") == null) //Set up a holder object in case we don't have one yet.
+            if (paintHit.collider.transform.Find("Holder") == null) //Set up a holder object in case we don't have one yet.
             {
                 holder = new GameObject("Holder");
                 holderTransform = holder.transform;

@@ -180,9 +180,9 @@ namespace MeshBrush
             else CreateHolder();
 
             // Create a brush object if we don't have one already. This is needed for multiple mesh painting.
-            if (_mb.holderObj.FindChild("Brush") != null)
+            if (_mb.holderObj.Find("Brush") != null)
             {
-                _mb.brush = _mb.holderObj.FindChild("Brush").gameObject;
+                _mb.brush = _mb.holderObj.Find("Brush").gameObject;
                 _mb.brushTransform = _mb.brush.transform;
             }
             else
@@ -2068,7 +2068,7 @@ namespace MeshBrush
 
             // For the creation of multiple meshes at once we need a temporary brush gameobject, 
             // which will wander around our circle brush's area to shoot rays and adapt the meshes.
-            if (_mb.holderObj.FindChild("Brush") == null)
+            if (_mb.holderObj.Find("Brush") == null)
             {
                 // In case we don't have one yet (or the user deleted it), create a new one.
                 _mb.brush = new GameObject("Brush");
