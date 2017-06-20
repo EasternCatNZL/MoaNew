@@ -93,8 +93,13 @@ public class ShowPulse : MonoBehaviour
                 //if moa is very close
                 if (Vector3.Distance(transform.position, Moa.position) <= veryCloseDistance)
                 {
-                    print("Moa very close");
+                    //print("Moa very close");
                     showHint.isShowing = true;
+                    if (!showHint.hasApproached)
+                    {
+                        showHint.Approach();
+                    }
+
                 }
                 else
                 {

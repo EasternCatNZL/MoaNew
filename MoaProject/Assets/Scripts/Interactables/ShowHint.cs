@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowHint : MonoBehaviour {
+public class ShowHint : MonoBehaviour
+{
 
     //image ref
     private SpriteRenderer sprite; //ref to sprite renderer
@@ -14,8 +15,11 @@ public class ShowHint : MonoBehaviour {
     //control vars
     [Header("Control vars")]
     public float fadeSpeed = 4.0f; //speed at which card fades away
-
-    //private bool isShowing = false; //check whether image should be showing
+    public float hintDelay = 5.0f; //time that needs to past before hint is shown
+    [HideInInspector]
+    public float waitStartTime; //time to start waiting on delay from
+    [HideInInspector]
+    public bool hasApproached = false; //checks to see if moa has approached the object
 
     //image control
     [HideInInspector]
@@ -24,17 +28,19 @@ public class ShowHint : MonoBehaviour {
     public bool notShowing = false; //checks if image is fading from color to transparent
 
     private float alphaLevel = 0.0f; //current alpha level of the card
-    
+
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         sprite = GetComponent<SpriteRenderer>();
         mainCamera = GameObject.Find("MainCamera");
-	}
-	
-	// Update is called once per frame
-	void Update () { 
-        if (isShowing)
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (isShowing && Time.time >= waitStartTime + hintDelay)
         {
             ShowImage();
 
@@ -45,9 +51,7 @@ public class ShowHint : MonoBehaviour {
         {
             HideImage();
         }
-	}
-
-
+    }
 
     //show the image
     private void ShowImage()
@@ -77,5 +81,12 @@ public class ShowHint : MonoBehaviour {
         {
             notShowing = false;
         }
+    }
+
+    //set up approach
+    public void Approach()
+    {
+        hasApproached = true;
+        waitStartTime = Time.time;
     }
 }
