@@ -154,8 +154,8 @@ public class LocationPoint : MonoBehaviour {
             isFadingIn = true;
 
             //if get input from controller, move scenes
-            if (Input.GetKeyDown(KeyCode.Joystick1Button0){
-                SceneManager.LoadScene();
+            if (Input.GetKeyDown(KeyCode.Joystick1Button0)){
+                SceneManager.LoadScene(nextSceneNumber);
             }
         }
     }
