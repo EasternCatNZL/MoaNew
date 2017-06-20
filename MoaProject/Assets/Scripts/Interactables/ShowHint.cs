@@ -89,4 +89,11 @@ public class ShowHint : MonoBehaviour
         hasApproached = true;
         waitStartTime = Time.time;
     }
+
+    //set up move away
+    public void MovedAway()
+    {
+        hasApproached = false;
+        isShowing = false;
+    }
 }

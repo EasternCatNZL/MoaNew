@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +19,12 @@ public class ShowPulse : MonoBehaviour
     public ParticleSystem pulse; //ref to particle effect
 
     //control vars
+    [Header("Control vars")]
+    public float resetTime = 300.0f; //time in seconds until object sets self back to active
+    [HideInInspector]
+    public bool isActive = true; //checks to see if object is currently active
+
+    private float deactivateTime; //time object deactivated
     private bool isPulsing = false; //checks to see if should be pulsing
     private bool isClose = false; //checks to see if moa is close
     private bool isVeryClose = false; //checks to see if moa is very close by
@@ -43,13 +50,24 @@ public class ShowPulse : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        CheckProximity();
-        if (isClose)
+        //if currently active
+        if (isActive)
         {
-            SetApproachTime();
-            ProximityPulse();
+            CheckProximity();
+            if (isClose)
+            {
+                SetApproachTime();
+                ProximityPulse();
+            }
         }
-
+        else
+        {
+            //sets self back to active if deactivated
+            if (Time.time >= deactivateTime + resetTime)
+            {
+                ResetSelf();
+            }
+        }
     }
 
     private void ProximityPulse()
@@ -103,7 +121,7 @@ public class ShowPulse : MonoBehaviour
                 }
                 else
                 {
-                    showHint.notShowing = true;
+                    showHint.MovedAway();
                 }
             }
 
@@ -127,4 +145,16 @@ public class ShowPulse : MonoBehaviour
         }
     }
 
+    //deactivates object
+    public void DeactivateSelf()
+    {
+        isActive = false;
+        deactivateTime = Time.time;
+    }
+
+    //sets self back to active after set time
+    private void ResetSelf()
+    {
+        isActive = true;
+    }
 }

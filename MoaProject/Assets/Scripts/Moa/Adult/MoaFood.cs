@@ -66,7 +66,7 @@ public class MoaFood : MonoBehaviour
         if(/*other.gameObject.CompareTag("Stone") && Input.GetKeyDown(KeyCode.E) ||*/ other.gameObject.CompareTag("Stone") && Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
             //set stone to false
-            other.gameObject.SetActive(false);
+            other.gameObject.GetComponent<ShowPulse>().DeactivateSelf();
             //add one stone to inventory
             numStones++;
             //fire anim
@@ -83,7 +83,7 @@ public class MoaFood : MonoBehaviour
             if (CanEatBerries())
             {
                 //set berry to false
-                other.gameObject.SetActive(false);
+                other.gameObject.GetComponent<ShowPulse>().DeactivateSelf();
                 //increase number of berries in inventory
                 numBerries++;
                 //fire anim
