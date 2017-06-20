@@ -5,8 +5,8 @@ using UnityEngine;
 public class MoaFood : MonoBehaviour
 {
     //Inventory variables
-    private float numStones = 0.0f; //number of stones currently stored
-    private float numBerries = 0.0f; //number of berries currently stored
+    public float numStones = 0.0f; //number of stones currently stored
+    public float numBerries = 0.0f; //number of berries currently stored
 
     //Inventory control variables
     [Header("Inventory Control")]
@@ -99,7 +99,7 @@ public class MoaFood : MonoBehaviour
             //}
         }
 
-        else if(/*other.gameObject.CompareTag("Nest") && Input.GetKeyDown(KeyCode.E) || */other.gameObject.CompareTag("Nest") && Input.GetKeyDown(KeyCode.Joystick1Button0))
+        else if(/*other.gameObject.CompareTag("Nest") && Input.GetKeyDown(KeyCode.E) || */other.gameObject.CompareTag("Chick") && Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
             //check if currently holding berries
             if(numBerries > 0.0f)

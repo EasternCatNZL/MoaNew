@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class FadeImage : MonoBehaviour {
 
     public float fadeSpeed = 1.0f; //speed of one fade transition
-    [HideInInspector]
+    public float blackoutLength = 2.0f;
+    //[HideInInspector]
     public bool fadingIn = false;
-    [HideInInspector]
+    //[HideInInspector]
     public bool fadingOut = false;
 
     private float alphaLevel; //alpha of image
+    private float lastTime = 0.0f;
 
 	// Use this for initialization
 	void Start () {
         alphaLevel = 0;
-        fadingIn = true;
+        //fadingIn = true;
 	}
 	
 	// Update is called once per frame
@@ -27,7 +29,11 @@ public class FadeImage : MonoBehaviour {
     private void Fade()
     {
         FadeIn();
-        FadeOut();
+        if(!fadingIn && fadingOut && Time.time - lastTime > blackoutLength)
+        {
+            FadeOut();
+        }
+
     }
 
     //fades the object alpha to black
@@ -39,14 +45,16 @@ public class FadeImage : MonoBehaviour {
             //change the alpha relative to time
             alphaLevel += fadeSpeed * Time.deltaTime;
             //get the spriterender on plane
-            GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+            GetComponent<Image>().color = new Color(0, 0, 0, alphaLevel);
             //keep values between 0 and 1
             alphaLevel = Mathf.Clamp(alphaLevel, 0.0f, 1.0f);
             if (alphaLevel == 1)
             {
                 fadingIn = false;
-                //this case only -> start fading out immediatly
                 fadingOut = true;
+                //this case only -> start fading out immediatly
+                lastTime = Time.time;
+
             }
         }
     }
@@ -60,10 +68,10 @@ public class FadeImage : MonoBehaviour {
             //change the alpha relative to time
             alphaLevel -= fadeSpeed * Time.deltaTime;
             //get the spriterender on plane
-            GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+            GetComponent<Image>().color = new Color(0, 0, 0, alphaLevel);
             //keep values between 0 and 1
             alphaLevel = Mathf.Clamp(alphaLevel, 0.0f, 1.0f);
-            if (alphaLevel == 1)
+            if (alphaLevel == 0)
             {
                 fadingOut = false;
                 

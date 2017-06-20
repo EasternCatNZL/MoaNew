@@ -18,37 +18,41 @@ public class ShowPulse : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Moa = GameObject.FindGameObjectWithTag("Moa").transform;
+        if(GameObject.FindGameObjectWithTag("Moa"))
+            Moa = GameObject.FindGameObjectWithTag("Moa").transform;
         pulse = gameObject.GetComponentInChildren<ParticleSystem>();
     }
 	
 	// Update is called once per frame
 	void LateUpdate () {
         //if distance between moa and object is less than reveal distance, pulse
-        if (Vector3.Distance(transform.position, Moa.position) <= revealDistance)
+        if (Moa)
         {
-            //if particle exists
-            if(pulse)
+            if (Vector3.Distance(transform.position, Moa.position) <= revealDistance)
             {
-                //if particle currently not playing, than play
-                if (!pulse.isPlaying)
+                //if particle exists
+                if (pulse)
                 {
-                    pulse.Play();
+                    //if particle currently not playing, than play
+                    if (!pulse.isPlaying)
+                    {
+                        pulse.Play();
+                    }
+                    //set pulsing to true
+                    isPulsing = true;
                 }
-                //set pulsing to true
-                isPulsing = true;
             }
-        }
-        //else if distance becomes greater than reveal distance
-        else
-        {
-            //turn off pulse
-            if (pulse.isPlaying)
+            //else if distance becomes greater than reveal distance
+            else
             {
-                pulse.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+                //turn off pulse
+                if (pulse.isPlaying)
+                {
+                    pulse.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+                }
+                //set pulsing to false
+                isPulsing = false;
             }
-            //set pulsing to false
-            isPulsing = false;
         }
 	}
 }

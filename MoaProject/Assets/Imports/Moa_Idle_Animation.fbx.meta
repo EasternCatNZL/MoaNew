@@ -116,7 +116,7 @@ ModelImporter:
     400086: MOA_REFERENCE_Fix:Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_2
     400088: MOA_REFERENCE_Fix:Moa_model_Rigged_UV_SkinWeight_Finished:Tail_Joint_3
     4300000: MOA_REFERENCE_Fix:Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
-    7400000: Take 001
+    7400000: Moa_Idle
     9500000: //RootNode
     13700000: MOA_REFERENCE_Fix:Moa_model_Rigged_UV_SkinWeight_Finished:Moa_Polymodel
   materials:
@@ -129,6 +129,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -141,7 +143,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Moa_Idle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 200

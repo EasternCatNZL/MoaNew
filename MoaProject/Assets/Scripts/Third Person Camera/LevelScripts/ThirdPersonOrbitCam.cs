@@ -18,7 +18,7 @@ public class ThirdPersonOrbitCam : MonoBehaviour
 	public float minVerticalAngle = -60f;                              // Camera min vertical clamp angle.
     //public float maxHorizontalAngle = 50f;
 
-	private float angleH = 0;                                          // Float to store camera horizontal angle related to mouse movement.
+	private float angleH = 140;                                          // Float to store camera horizontal angle related to mouse movement.
 	private float angleV = 0;                                          // Float to store camera vertical angle related to mouse movement.
 	private Vector3 relCameraPos;                                      // Current camera position relative to the player.
 	private float relCameraPosMag;                                     // Current camera distance to the player.
@@ -35,12 +35,13 @@ public class ThirdPersonOrbitCam : MonoBehaviour
 
     void Awake()
 	{
-		// Reference to the camera transform.
-		cam = transform;
+        // Reference to the camera transform.
+        angleH = 150;
+        cam = transform;
 
 		// Set camera default position.
 		cam.position = player.position + Quaternion.identity * pivotOffset + Quaternion.identity * camOffset;
-		cam.rotation = Quaternion.identity;
+		cam.rotation = Quaternion.Euler(new Vector3(0.0f, 145.0f, 0.0f));
         
 		// Get camera position relative to the player, used for collision test.
 		relCameraPos = transform.position - player.position;
@@ -55,6 +56,30 @@ public class ThirdPersonOrbitCam : MonoBehaviour
 		ResetFOV ();
 		ResetMaxVerticalAngle();
 	}
+
+    public void Init()
+    {
+        // Reference to the camera transform.
+        angleH = 150;
+        cam = transform;
+
+        // Set camera default position.
+        cam.position = player.position + Quaternion.identity * pivotOffset + Quaternion.identity * camOffset;
+        cam.rotation = Quaternion.Euler(new Vector3(0.0f, 145.0f, 0.0f));
+
+        // Get camera position relative to the player, used for collision test.
+        relCameraPos = transform.position - player.position;
+        relCameraPosMag = relCameraPos.magnitude - 0.5f;
+
+        // Set up references and default values.
+        smoothPivotOffset = pivotOffset;
+        smoothCamOffset = camOffset;
+        defaultFOV = cam.GetComponent<Camera>().fieldOfView;
+
+        ResetTargetOffsets();
+        ResetFOV();
+        ResetMaxVerticalAngle();
+    }
 
 	void LateUpdate()
     {

@@ -29,7 +29,8 @@ public class BasicBehaviour : MonoBehaviour
 
 	void Awake ()
 	{
-		// Set up the references.
+        // Set up the references.
+        if (!playerCamera) playerCamera = GameObject.FindGameObjectWithTag("Camera").transform;
 		behaviours = new List<GenericBehaviour> ();
 		anim = GetComponent<Animator> ();
 		hFloat = Animator.StringToHash("H");
