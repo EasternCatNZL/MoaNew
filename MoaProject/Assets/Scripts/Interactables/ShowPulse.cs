@@ -91,6 +91,10 @@ public class ShowPulse : MonoBehaviour {
                 {
                     print("Moa very close");
                     showHint.isShowing = true;
+                    if (!showHint.hasApproached)
+                    {
+                        showHint.Approach();
+                    }
                 }
                 else
                 {

@@ -14,8 +14,11 @@ public class ShowHint : MonoBehaviour {
     //control vars
     [Header("Control vars")]
     public float fadeSpeed = 4.0f; //speed at which card fades away
-
-    //private bool isShowing = false; //check whether image should be showing
+    public float hintDelay = 5.0f; //time that needs to past before hint is shown
+    [HideInInspector]
+    public float waitStartTime; //time to start waiting on delay from
+    [HideInInspector]
+    public bool hasApproached = false; //checks to see if moa has approached the object
 
     //image control
     [HideInInspector]
@@ -34,7 +37,7 @@ public class ShowHint : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () { 
-        if (isShowing)
+        if (isShowing && Time.time >= waitStartTime + hintDelay)
         {
             ShowImage();
 
@@ -46,8 +49,6 @@ public class ShowHint : MonoBehaviour {
             HideImage();
         }
 	}
-
-
 
     //show the image
     private void ShowImage()
@@ -77,5 +78,12 @@ public class ShowHint : MonoBehaviour {
         {
             notShowing = false;
         }
+    }
+
+    //set up approach
+    public void Approach()
+    {
+        hasApproached = true;
+        waitStartTime = Time.time;
     }
 }
