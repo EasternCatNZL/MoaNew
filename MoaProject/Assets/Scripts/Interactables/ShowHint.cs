@@ -35,6 +35,8 @@ public class ShowHint : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         mainCamera = GameObject.Find("MainCamera");
+        //in case any were not transparent to begin with
+        sprite.color = new Color(1, 1, 1, alphaLevel);
     }
 
     // Update is called once per frame
