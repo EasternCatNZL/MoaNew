@@ -55,6 +55,11 @@ public class LocationPoint : MonoBehaviour {
             FadeOutImage();
         }
 
+        if(isSelected && Input.GetKeyDown(KeyCode.Joystick1Button0))
+        {
+            SceneManager.LoadScene(nextSceneNumber);
+        }
+
         //if (!isSelected && !isFadingOut)
         //{
         //    ResetCard();

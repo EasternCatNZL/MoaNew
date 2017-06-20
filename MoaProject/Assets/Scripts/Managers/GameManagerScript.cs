@@ -17,14 +17,17 @@ public class GameManagerScript : MonoBehaviour {
 
     private bool StartDeathScene = false;
     private bool DoneDeathScene = false;
+    private bool StartEndScene = false;
+    private bool DoneEndScene = false;
     private bool EndGame = false;
-    private float EndGameCooldown = 0.0f;
+    private float EndGameCooldown = 2.0f;
 
 	// Use this for initialization
 	void Start () {
         //set up time limit from when scene starts
         timeLimit += Time.time;
         MotherMoaDeadCountdown += Time.time;
+
     }
 	
 	// Update is called once per frame
@@ -48,6 +51,13 @@ public class GameManagerScript : MonoBehaviour {
         if (Time.time >= MotherMoaDeadCountdown && !DoneDeathScene)
         {
             StartDeathScene = true;
+            //do game over stuff
+        }
+        if (Time.time >= EndGameCooldown && StartEndScene && !DoneEndScene)
+        {
+            print("STARTING");
+            EndScene();
+            DoneEndScene = true;
             //do game over stuff
         }
     }
@@ -79,6 +89,12 @@ public class GameManagerScript : MonoBehaviour {
         WeatherSystem.GetComponent<DynamicWeather>()._Player = BabyWalkingMoa.transform;
 
         DoneDeathScene = true;
+    }
+
+    public void BeginEndScene()
+    {
+        EndGameCooldown += Time.time;
+        StartEndScene = true;
     }
 
     public void EndScene()

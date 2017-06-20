@@ -40,7 +40,7 @@ public class TriggerNewNest : MonoBehaviour {
 
             BabyWalkingMoa.SetActive(false);
 
-            GameManager.GetComponent<GameManagerScript>().EndScene();
+            GameManager.GetComponent<GameManagerScript>().BeginEndScene();
         }
     }
 }

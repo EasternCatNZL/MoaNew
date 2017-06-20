@@ -106,6 +106,7 @@ public class CameraCinematics : MonoBehaviour
         running = true;
         switch (SceneNum)
         {
+            case 1:
             case 0:
                 Mainlight.transform.rotation = Quaternion.Euler(new Vector3(-15, -30, 0.0f));
                 Mainlight.GetComponent<Light>().intensity = 0.35f;

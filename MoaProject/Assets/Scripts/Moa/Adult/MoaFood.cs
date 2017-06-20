@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoaFood : MonoBehaviour
 {
     //Inventory variables
     public float numStones = 0.0f; //number of stones currently stored
     public float numBerries = 0.0f; //number of berries currently stored
+
+    public Text StoneText = null;
+    public Text BerryText = null;
 
     //Inventory control variables
     [Header("Inventory Control")]
@@ -26,6 +30,8 @@ public class MoaFood : MonoBehaviour
     {
         //CanEatBerries();
         StoneDecay();
+        StoneText.text = ((int)numStones).ToString();
+        BerryText.text = ((int)numBerries).ToString();
     }
 
     //Checks to see if moa currently has stones
