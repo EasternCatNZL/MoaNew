@@ -45,6 +45,7 @@ public class ShowPulse : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Moa"))
             Moa = GameObject.FindGameObjectWithTag("Moa").transform;
         pulse = gameObject.GetComponentInChildren<ParticleSystem>();
+        showHint = gameObject.GetComponentInChildren<ShowHint>();
     }
 
     // Update is called once per frame
