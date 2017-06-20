@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShowPulse : MonoBehaviour {
+public class ShowPulse : MonoBehaviour
+{
 
     //Distance vars
     public float revealDistance = 10.0f; //distance where object can be revealed within
@@ -27,19 +28,20 @@ public class ShowPulse : MonoBehaviour {
     public float timeToShowHint = 3.0f; //time that needs to past before ui hint is shown
 
     private float enterTime; //time moa approached the thing
-    
+
     //ref to moa
     private Transform Moa; //ref to moa object
 
-	// Use this for initialization
-	void Start () {
-        if(GameObject.FindGameObjectWithTag("Moa"))
+    // Use this for initialization
+    void Start()
+    {
+        if (GameObject.FindGameObjectWithTag("Moa"))
             Moa = GameObject.FindGameObjectWithTag("Moa").transform;
         pulse = gameObject.GetComponentInChildren<ParticleSystem>();
     }
-	
-	// Update is called once per frame
-	void LateUpdate ()
+
+    // Update is called once per frame
+    void LateUpdate()
     {
         CheckProximity();
         if (isClose)
@@ -47,7 +49,7 @@ public class ShowPulse : MonoBehaviour {
             SetApproachTime();
             ProximityPulse();
         }
-        
+
     }
 
     private void ProximityPulse()
@@ -63,19 +65,19 @@ public class ShowPulse : MonoBehaviour {
             //set pulsing to true
             isPulsing = true;
         }
-        
-            //else if distance becomes greater than reveal distance
-            else
+
+        //else if distance becomes greater than reveal distance
+        else
+        {
+            //turn off pulse
+            if (pulse.isPlaying)
             {
-                //turn off pulse
-                if (pulse.isPlaying)
-                {
-                    pulse.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-                }
-                //set pulsing to false
-                isPulsing = false;
+                pulse.Stop(true, ParticleSystemStopBehavior.StopEmitting);
             }
+            //set pulsing to false
+            isPulsing = false;
         }
+
     }
 
     //check if moa is close
@@ -99,7 +101,7 @@ public class ShowPulse : MonoBehaviour {
                     showHint.notShowing = true;
                 }
             }
-            
+
         }
         else
         {
