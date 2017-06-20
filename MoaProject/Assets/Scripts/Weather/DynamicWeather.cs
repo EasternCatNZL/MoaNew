@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DynamicWeather : MonoBehaviour {
 
-    private Transform _Player; //player gameobject transform
+    public Transform _Player; //player gameobject transform
     private Transform _Weather; //Weather gameobject transform
     public float WeatherHeight = 15.0f; //defines height from ground for weather bject.
         
@@ -147,8 +147,6 @@ public class DynamicWeather : MonoBehaviour {
 
     void PickWeatherState()
     {
-        _SwitchWeather = Random.Range(0, 5);//_SwitchWeather is = to random range between 0,5
-
         //disable particle systems        
         SunCloudsEmission.enabled = false;
         StormCloudEmission.enabled = false;
@@ -156,7 +154,8 @@ public class DynamicWeather : MonoBehaviour {
         FogEmission.enabled = false;
         OvercastEmission.enabled = false;
         RainEmission.enabled = false;
-        
+
+        _SwitchWeather = Random.Range(0, 5);//_SwitchWeather is = to random range between 0,5     
 
         switch (_SwitchWeather)
         {

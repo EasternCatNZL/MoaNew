@@ -7,6 +7,7 @@ public class GameManagerScript : MonoBehaviour {
     public GameObject MotherMoa = null;
     public GameObject BabyMoa = null;
     public GameObject BabyWalkingMoa = null;
+    public GameObject WeatherSystem = null;
     public CameraCinematics CinCam = null;
     public GameObject BlackoutImage = null;
     [Header("Time Variables")]
@@ -71,6 +72,7 @@ public class GameManagerScript : MonoBehaviour {
         BabyWalkingMoa.SetActive(true);
         BabyWalkingMoa.GetComponent<MoveBehaviour>().disabled = true;
         BabyWalkingMoa.GetComponent<Animator>().SetTrigger("Standup");
+        WeatherSystem.GetComponent<DynamicWeather>()._Player = BabyWalkingMoa.transform;
 
         DoneDeathScene = true;
     }
