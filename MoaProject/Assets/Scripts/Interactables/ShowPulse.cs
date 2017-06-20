@@ -53,6 +53,7 @@ public class ShowPulse : MonoBehaviour
         //if currently active
         if (isActive)
         {
+
             CheckProximity();
             if (isClose)
             {
@@ -65,7 +66,7 @@ public class ShowPulse : MonoBehaviour
             //sets self back to active if deactivated
             if (Time.time >= deactivateTime + resetTime)
             {
-                ResetSelf();
+                ResetSelf();         
             }
         }
     }
@@ -149,6 +150,11 @@ public class ShowPulse : MonoBehaviour
     public void DeactivateSelf()
     {
         isActive = false;
+        if (pulse.isPlaying)
+        {
+            pulse.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+            gameObject.GetComponent<SphereCollider>().enabled = false;
+        }
         deactivateTime = Time.time;
     }
 
@@ -156,5 +162,6 @@ public class ShowPulse : MonoBehaviour
     private void ResetSelf()
     {
         isActive = true;
+        gameObject.GetComponent<SphereCollider>().enabled = true;
     }
 }

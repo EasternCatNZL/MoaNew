@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraCinematics : MonoBehaviour
 {
@@ -74,6 +75,9 @@ public class CameraCinematics : MonoBehaviour
                         CameraObject.GetComponent<ThirdPersonOrbitCam>().enabled = true;
                         CameraObject.GetComponent<ThirdPersonOrbitCam>().Init();
                         GameObject.FindGameObjectWithTag("Chick").GetComponent<MoveBehaviour>().disabled = false;
+                        break;
+                    case 1:
+                        SceneManager.LoadScene(0);
                         break;
                     default: break;
                 }

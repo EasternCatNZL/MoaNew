@@ -8,6 +8,7 @@ public class DynamicWeather : MonoBehaviour {
     public Transform _Player; //player gameobject transform
     private Transform _Weather; //Weather gameobject transform
     public float WeatherHeight = 15.0f; //defines height from ground for weather bject.
+    public bool Dynamic = true;
         
     //creates slot in inspector to asign particle system
     public ParticleSystem SunCloudsParticleSystem;
@@ -32,6 +33,7 @@ public class DynamicWeather : MonoBehaviour {
     public float SwitchWeatherTimer = 0.0f;//switch weather timer = 0
     public float ResetWeatherTimer = 20.0f;//defines value to reset weather timer
 
+    public float AudioMax = 0.5f;
     public float AudioFadeTime = 0.25f; //defines rate for fading audio
     
     //creates slot in inspector to asign audio
@@ -52,8 +54,9 @@ public class DynamicWeather : MonoBehaviour {
     public float RainIntensity = 0.25f;
     //---------------------------------------------
 
+
     public WeatherStates CurrentWeatherState; //defines naming convention for weather state
-    private int _SwitchWeather; //defines naming convention of switch range
+    public int _SwitchWeather; //defines naming convention of switch range
     
     public enum WeatherStates //defines all weather states
     {
@@ -85,11 +88,14 @@ public class DynamicWeather : MonoBehaviour {
         //--------------------------------------------------------
 
         StartCoroutine(WeatherFSM()); //start finite state machine
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        WeatherTimer();
+        if (Dynamic)
+        {
+            WeatherTimer();
+        }
 
         _Weather.transform.position = new Vector3(_Player.position.x, _Player.position.y + WeatherHeight, _Player.position.z); //weather equals players position + WeatherHeight for players Y position
 	}
@@ -180,7 +186,6 @@ public class DynamicWeather : MonoBehaviour {
 
     void Sunny()
     {
-        Debug.Log("Sunny");
         SunCloudsEmission.enabled = true;
 
         //if light intensity is greater than SunnyIntensity, decrease by time.deltatime * LightDimTime
@@ -210,7 +215,7 @@ public class DynamicWeather : MonoBehaviour {
         }
 
         //if volume is less than 1 and audio equals current weather audio, start increasing volume by AudioFadeTime
-        if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == SunnyAudio)
+        if (GetComponent<AudioSource>().volume < AudioMax && GetComponent<AudioSource>().clip == SunnyAudio)
         {
             GetComponent<AudioSource>().volume += Time.deltaTime * AudioFadeTime;
         }
@@ -218,7 +223,6 @@ public class DynamicWeather : MonoBehaviour {
 
     void Thunder()
     {
-        Debug.Log("Thunder");
         StormCloudEmission.enabled = true;
         ThunderEmission.enabled = true;
         RainEmission.enabled = true;
@@ -250,7 +254,7 @@ public class DynamicWeather : MonoBehaviour {
         }
 
         //if volume is less than 1 and audio equals current weather audio, start increasing volume by AudioFadeTime
-        if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == ThunderStormAudio)
+        if (GetComponent<AudioSource>().volume < AudioMax && GetComponent<AudioSource>().clip == ThunderStormAudio)
         {
             GetComponent<AudioSource>().volume += Time.deltaTime * AudioFadeTime;
         }
@@ -258,7 +262,6 @@ public class DynamicWeather : MonoBehaviour {
 
     void Fog()
     {
-        Debug.Log("Fog");
         FogEmission.enabled = true;
         _Weather.transform.position = new Vector3(_Player.position.x, _Player.position.y, _Player.position.z);
 
@@ -289,7 +292,7 @@ public class DynamicWeather : MonoBehaviour {
         }
 
         //if volume is less than 1 and audio equals current weather audio, start increasing volume by AudioFadeTime
-        if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == FogAudio)
+        if (GetComponent<AudioSource>().volume < AudioMax && GetComponent<AudioSource>().clip == FogAudio)
         {
             GetComponent<AudioSource>().volume += Time.deltaTime * AudioFadeTime;
         }
@@ -297,7 +300,6 @@ public class DynamicWeather : MonoBehaviour {
 
     void Overcast()
     {
-        Debug.Log("Overcast");
         OvercastEmission.enabled = true;
 
         //if light intensity is greater than OvercastIntensity, decrease by time.deltatime * LightDimTime
@@ -327,7 +329,7 @@ public class DynamicWeather : MonoBehaviour {
         }
 
         //if volume is less than 1 and audio equals current weather audio, start increasing volume by AudioFadeTime
-        if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == OvercastAudio)
+        if (GetComponent<AudioSource>().volume < AudioMax && GetComponent<AudioSource>().clip == OvercastAudio)
         {
             GetComponent<AudioSource>().volume += Time.deltaTime * AudioFadeTime;
         }
@@ -335,7 +337,6 @@ public class DynamicWeather : MonoBehaviour {
 
     void Rain()
     {
-        Debug.Log("Rain");
         RainEmission.enabled = true;
         OvercastEmission.enabled = true;
 
@@ -366,7 +367,7 @@ public class DynamicWeather : MonoBehaviour {
         }
 
         //if volume is less than 1 and audio equals current weather audio, start increasing volume by AudioFadeTime
-        if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == RainAudio)
+        if (GetComponent<AudioSource>().volume < AudioMax && GetComponent<AudioSource>().clip == RainAudio)
         {
             GetComponent<AudioSource>().volume += Time.deltaTime * AudioFadeTime;
         }

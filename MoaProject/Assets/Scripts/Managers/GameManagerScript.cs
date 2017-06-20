@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour {
 
+    public GameObject MotherCall = null;
     public GameObject MotherMoa = null;
     public GameObject BabyMoa = null;
     public GameObject BabyWalkingMoa = null;
@@ -16,6 +17,8 @@ public class GameManagerScript : MonoBehaviour {
 
     private bool StartDeathScene = false;
     private bool DoneDeathScene = false;
+    private bool EndGame = false;
+    private float EndGameCooldown = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -66,6 +69,7 @@ public class GameManagerScript : MonoBehaviour {
         //Run Cinematic Camera
         CinCam.runCamera();
 
+        MotherCall.GetComponent<LoopAudio>().Loop = true;
         MotherMoa.transform.position = new Vector3(0.0f, -20.0f, 0.0f);
         MotherMoa.SetActive(false);
         BabyMoa.SetActive(false);
@@ -75,5 +79,25 @@ public class GameManagerScript : MonoBehaviour {
         WeatherSystem.GetComponent<DynamicWeather>()._Player = BabyWalkingMoa.transform;
 
         DoneDeathScene = true;
+    }
+
+    public void EndScene()
+    {
+        //Setup Cinematic Camera
+        CinCam.SceneNum = 1;
+        CinCam.Mode = CameraCinematics.CameraModes.SPIRALZOOM;
+        CinCam.CameraTarget = GameObject.Find("CameraFocus_2").transform.position;
+        //CinCam.transform.position = CinCam.CameraTarget.transform.position;
+        //CinCam.transform.rotation = Quaternion.Euler(new Vector3(0.0f, 154.0f, 0.0f));
+        CinCam.Duration = 5.0f;
+        CinCam.StartPosition = new Vector3(0.0f, 0.0f, 2.0f);
+        CinCam.EndPosition = new Vector3(0.0f, 2.0f, -2.0f);
+        CinCam.ZoomStart = 2.0f;
+        CinCam.ZoomEnd = 8.0f;
+        //Run Cinematic Camera
+        CinCam.runCamera();
+
+        EndGame = true;
+        EndGameCooldown = Time.time;
     }
 }
